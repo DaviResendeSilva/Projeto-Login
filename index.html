@@ -7,6 +7,7 @@
     <title>Projeto Login</title>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/mediaquery.css">
+    <script src="https://kit.fontawesome.com/4f8273f767.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
@@ -18,8 +19,25 @@
         <div id="formulario">
         <h1> Login </h1>
         <p> Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-        <form action="login.php" method="post"></form>
-        </div>
+        <form id="log" action="login.php" method="post">
+     
+            <div id="divemail"><i id="email" class="fa-solid fa-user"></i>
+            
+                       <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail" maxlength="30" required>
+                           <label for="iemail"></label>
+            </div>
+       
+           <div id="divsenha"><i id="senha" class="fa-solid fa-key"></i>
+               
+               <input type="password" name="senha" id="isenha" placeholder="Digite sua senha"  maxlength="10" required>
+               <label for="isenha"></label>
+           </div>
+     <input id="ientrar" type="submit" value="Entrar"><br>
+     <a id="ipass" href="esqueci.html">
+        Esqueci a senha 📧
+     </a>
+        </form>
+   
 
         </section>
     </main>

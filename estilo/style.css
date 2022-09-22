@@ -4,7 +4,7 @@
 /* 
     Paleta de Cores 
     Cinza: #beb7bd
-    Marrom: #7c6669
+    Marrom: #482A2E
 
 */
 *{
@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 body, html{
-    background-color: #7c6669;
+    background-color: #482A2E;
     height: 100vh;
     width: 100vw;
 }
@@ -32,18 +32,88 @@ section#login{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 0px 9px #00000054;
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+}
+section#login h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+section#login p{
+    margin-bottom: 5px;
 }
 section#login > div#imagem{
     display: block;
     background-image: url(../imagens/predio.jpg);
-    height: 210px;
+    height: 230px;
+
     border-radius: 20px 20px 0px 0px;
     background-size: cover;
 }
 section#login > div#formulario{
     padding: 10px;
     display: block;
+}
+section#login div#divsenha{
+    background-color: #beb7bd;
+   color: white;
+   border-radius: 5px;
+   margin-bottom: 5px;
+}
+section#login div#divemail{
+    background-color:#482a2eee ;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+section#login input#isenha{
+    width: 90.6%;
+    border: solid .01px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: solid 0px;
+}
+section#login input#iemail{
+    width: 91.6%;
+    border: solid .01px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: solid 0px;
+}
+
+section#login input#ientrar{
+    background-color: #7fc485;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: solid .1px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+section#login a#ipass:hover{
+    background-color: #482A2E;
+    font-weight: bold;
+}
+section#login input#ientrar:hover{
+    background-color: #17b867;
+    font-weight: bolder;
+}
+section#login a#ipass{
+    display: block;
+    background-color: darkgray;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+section#login div#divsenha:hover {
+    background-color: #585051;
+}
+section#login div#divemail:hover {
+    background-color: #1b1011;
 }
