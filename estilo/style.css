@@ -31,8 +31,8 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 0px 0px 9px #00000054;
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -57,19 +57,21 @@ section#login > div#formulario{
 }
 section#login div#divsenha{
     background-color: #482A2E;
+    border: solid 2px #482a2eee;
    color: white;
-   border-radius: 5px;
+   border-radius: 8px;
    margin-bottom: 5px;
 }
 section#login div#divemail{
     background-color:#482a2eee ;
-    border-radius: 5px;
+    border: solid 2px #482a2eee;
+    border-radius: 8px;
     margin-bottom: 5px;
 }
 section#login input#isenha{
-    width: 91.1%;
+    width: calc(100% - 31px);
     border: solid .01px;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 3px;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -77,9 +79,8 @@ section#login input#isenha{
     background-image: linear-gradient(to right, #e9dfe7, #482a2e70);
 }
 section#login input#iemail{
-    width: 92%;
-    border: solid .01px;
-    border-radius: 5px;
+    width: calc(100% - 31px);
+    border-radius: 8px;
     padding: 3px;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -91,7 +92,7 @@ section#login input#ientrar{
     background-color: #7fc485;
     color: white;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 8px;
     border: solid .1px;
     padding: 3px;
     margin-bottom: 5px;
@@ -101,12 +102,12 @@ section#login a#ipass:hover{
     font-weight: bold;
     color: white;
     border: 1px solid  green;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 section#login input#ientrar:hover{
     background-color: #17b867;
     font-weight: bolder;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 section#login a#ipass{
     display: block;
@@ -115,7 +116,7 @@ section#login a#ipass{
     text-align: center;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: 600;
     border: 1px solid  green;
 }
@@ -125,3 +126,19 @@ section#login div#divsenha:hover {
 section#login div#divemail:hover {
     background-color: #1b1011;
 }
+section#login i#email{
+    color: white;
+ width: 26px;
+ padding-left: 8px;
+}
+section#login i#senha{
+    color: white;
+ width: 26px;
+ padding-left: 7px;
+}
+div#divsenha > input#isenha:focus-within{
+ background-image: linear-gradient(to left, white, white)
+}
+div#divemail > input#iemail:focus-within{
+    background-image: linear-gradient(to left, white, white)
+   }

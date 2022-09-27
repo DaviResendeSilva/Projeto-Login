@@ -7,8 +7,11 @@ body{
 }
  section#login{
     width: 80vw;
-height: 50vh;
+height: 280px;
  }
+ div#formulario > p{
+    margin: 20px 0px;
+}
 section#login > div#imagem{
     float: left;
     width: 30%;
@@ -21,10 +24,10 @@ section#login > div#formulario{
     width: 70%;
 }
 section#login input#isenha{
-    width: 95%;
+    width: calc(100% - 31px)
 }
 section#login input#iemail{
-    width: 95.5%;
+    width: calc(100% - 31px)
 }
 }
 @media screen and (min-width: 992px) {
@@ -33,14 +36,15 @@ section#login input#iemail{
     }
     section#login{
 width: 80vw;
-height: 50vh;
+height: 350px;
 
     }
+
 section#login input#isenha{
-    width: 94.6%;
+    width: calc(100% - 31px)
 }
 section#login input#iemail{
-    width: 95.1%;
+    width: calc(100% - 31px)
 }
     section#login > div#imagem{
         float: right;
@@ -56,6 +60,7 @@ width: 50%;
         font-size: 2em;
     }
     div#formulario > p {
-      font-size: 1.2em;
+      font-size: 1em;
+      margin: 20px 0px;
     }
 }
